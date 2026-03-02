@@ -1,11 +1,28 @@
 
-  # Vitrine digitale professionnelle
+# Vitrine digitale professionnelle
 
-  This is a code bundle for Vitrine digitale professionnelle. The original project is available at https://www.figma.com/design/KTZOXGzSHUa4PKmByJ9p2V/Vitrine-digitale-professionnelle.
+Site vitrine ALTERIX réalisé avec Vue 3 + Vite.
 
-  ## Running the code
+## Lancer en local
 
-  Run `npm i` to install the dependencies.
+- `npm install`
+- `npm run dev`
 
-  Run `npm run dev` to start the development server.
-  # aletrix
+## Build production
+
+- `npm run build`
+
+## Déploiement GitHub Pages
+
+Le workflow [deploy-pages.yml](.github/workflows/deploy-pages.yml) déploie automatiquement le site à chaque push sur `main`.
+
+URL attendue :
+
+- `https://ziontech1998-maker.github.io/aletrix/`
+
+## Important (une seule fois sur GitHub)
+
+Dans le repo GitHub :
+
+- `Settings` → `Pages`
+- `Build and deployment` → `Source: GitHub Actions`
