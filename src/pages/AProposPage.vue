@@ -18,7 +18,7 @@
               <ArrowRight class="ml-2 w-5 h-5" />
             </RouterLink>
           </div>
-          <div class="w-full">
+          <div class="w-full mt-8 lg:mt-0">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
               alt="Développeurs collaboration technologie"

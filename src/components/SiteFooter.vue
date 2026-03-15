@@ -5,11 +5,6 @@
         <div>
           <h3 class="text-xl font-bold mb-4">ALTERIX</h3>
           <p class="text-gray-300 mb-4">Solutions digitales innovantes pour transformer votre entreprise</p>
-          <div class="flex space-x-4">
-            <a href="https://www.linkedin.com/company/alterix-tech/" target="_blank" rel="noopener noreferrer" class="hover:text-[#5FA8FF] transition-colors" aria-label="LinkedIn">
-              <Linkedin :size="20" />
-            </a>
-          </div>
         </div>
 
         <div>
@@ -24,7 +19,12 @@
         <div>
           <h4 class="font-semibold mb-4">Suivez-nous</h4>
           <ul class="space-y-2 text-gray-300">
-            <li><a href="https://www.linkedin.com/company/alterix-tech/" target="_blank" rel="noopener noreferrer" class="hover:text-[#5FA8FF] transition-colors">LinkedIn</a></li>
+            <li>
+              <a href="https://www.linkedin.com/company/alterix-tech/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-[#5FA8FF] transition-colors">
+                <Linkedin :size="16" />
+                LinkedIn
+              </a>
+            </li>
           </ul>
         </div>
 
