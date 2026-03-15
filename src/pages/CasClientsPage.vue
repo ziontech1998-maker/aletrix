@@ -4,7 +4,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
           <h1 class="text-4xl lg:text-6xl font-bold mb-6">Cas Clients</h1>
-          <p class="text-xl text-gray-300">Découvrez comment nous avons aidé nos clients à transformer leurs défis en succès mesurables.</p>
+          <p class="text-xl lg:text-2xl text-gray-300">Découvrez comment nous avons aidé nos clients à transformer leurs défis en succès mesurables.</p>
         </div>
       </div>
     </section>
@@ -59,7 +59,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-5xl font-bold mb-4" style="color: #0E1B2E;">Témoignages Clients</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ce que nos clients disent de notre collaboration</p>
+          <p class="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">Ce que nos clients disent de notre collaboration</p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8">
@@ -98,7 +98,7 @@
     <section class="py-20" style="background-color: #1F5EFF;">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Prêt à rejoindre nos clients satisfaits ?</h2>
-        <p class="text-xl text-white/90 mb-8">Discutons de votre projet et créons ensemble votre success story</p>
+        <p class="text-xl lg:text-2xl text-white/90 mb-8">Discutons de votre projet et créons ensemble votre success story</p>
         <RouterLink to="/contact" class="inline-flex items-center px-8 py-4 bg-white text-[#1F5EFF] rounded-lg font-bold hover:shadow-xl transition-all">
           Demander une étude de cas
           <ArrowRight class="ml-2 w-5 h-5" />

@@ -3,7 +3,7 @@
     <section class="bg-gradient-to-br from-[#0E1B2E] to-[#1a2d4d] text-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl lg:text-6xl font-bold mb-6">Contactez-nous</h1>
-        <p class="text-xl text-gray-300 max-w-3xl mx-auto">Nous sommes là pour répondre à vos questions et transformer vos idées en réalité</p>
+        <p class="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto">Nous sommes là pour répondre à vos questions et transformer vos idées en réalité</p>
       </div>
     </section>
 
@@ -27,7 +27,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12">
           <div class="bg-white rounded-2xl p-8 shadow-xl">
-            <h2 class="text-3xl font-bold mb-6" style="color: #0E1B2E;">Envoyez-nous un message</h2>
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6" style="color: #0E1B2E;">Envoyez-nous un message</h2>
             <form class="space-y-6" @submit.prevent="handleSubmit">
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
@@ -48,7 +48,7 @@
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-sm mb-2" style="color: #0E1B2E;">Téléphone</label>
-                  <input v-model="formData.phone" type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#1F5EFF] focus:ring-2 focus:ring-[#1F5EFF]/20 outline-none transition-all" placeholder="+33 6 12 34 56 78" />
+                  <input v-model="formData.phone" type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#1F5EFF] focus:ring-2 focus:ring-[#1F5EFF]/20 outline-none transition-all" placeholder="+225 07 89 80 08 20" />
                 </div>
                 <div>
                   <label class="block text-sm mb-2" style="color: #0E1B2E;">Entreprise</label>
@@ -116,8 +116,8 @@
       <div class="absolute inset-0 flex items-center justify-center">
         <div class="text-center">
           <MapPin class="w-16 h-16 mx-auto mb-4" style="color: #1F5EFF;" />
-          <p class="text-xl font-semibold" style="color: #0E1B2E;">123 Avenue de l'Innovation, 75001 Paris</p>
-          <p class="text-gray-600 mt-2">Carte interactive disponible</p>
+          <p class="text-xl font-semibold" style="color: #0E1B2E;">Abidjan, Côte d'Ivoire</p>
+          <p class="text-gray-600 mt-2">Nos bureaux en Côte d'Ivoire</p>
         </div>
       </div>
     </section>
@@ -139,9 +139,9 @@ const formData = reactive({
 });
 
 const contactInfo = [
-  { icon: Mail, title: 'Email', content: 'contact@alterix.fr', link: 'mailto:contact@alterix.fr' },
-  { icon: Phone, title: 'Téléphone', content: '+33 1 23 45 67 89', link: 'tel:+33123456789' },
-  { icon: MapPin, title: 'Adresse', content: "123 Avenue de l'Innovation\n75001 Paris, France", link: '#' },
+  { icon: Mail, title: 'Email', content: 'contact@alterix-tech.com', link: 'mailto:contact@alterix-tech.com' },
+  { icon: Phone, title: 'Téléphone', content: '+225 07 89 80 08 20', link: 'tel:+22507898008 20' },
+  { icon: MapPin, title: 'Adresse', content: "Abidjan, Côte d'Ivoire", link: '#' },
 ];
 
 const quickActions = [
@@ -151,9 +151,7 @@ const quickActions = [
 ];
 
 const offices = [
-  { city: 'Paris', address: "123 Avenue de l'Innovation, 75001", type: 'Siège Social' },
-  { city: 'Lyon', address: '45 Rue de la Tech, 69002', type: 'Bureau Régional' },
-  { city: 'Bruxelles', address: '78 Boulevard Européen, 1000', type: 'Bureau International' },
+  { city: 'Abidjan', address: "Abidjan, Côte d'Ivoire", type: 'Siège Social' },
 ];
 
 const handleSubmit = () => {

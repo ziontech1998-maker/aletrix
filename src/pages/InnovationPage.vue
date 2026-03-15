@@ -5,7 +5,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 class="text-4xl lg:text-6xl font-bold mb-6">Innovation & R&D</h1>
-            <p class="text-xl text-gray-300 mb-8">Notre laboratoire d'innovation explore les technologies de demain pour créer les solutions d'aujourd'hui.</p>
+            <p class="text-xl lg:text-2xl text-gray-300 mb-8">Notre laboratoire d'innovation explore les technologies de demain pour créer les solutions d'aujourd'hui.</p>
             <RouterLink to="/contact" class="inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all hover:shadow-lg" style="background-color: #1F5EFF;">
               Collaborer avec notre lab
               <ArrowRight class="ml-2 w-5 h-5" />
@@ -26,7 +26,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-5xl font-bold mb-4" style="color: #0E1B2E;">Notre Approche R&D</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Une méthodologie éprouvée pour transformer l'innovation en valeur</p>
+          <p class="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">Une méthodologie éprouvée pour transformer l'innovation en valeur</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -45,7 +45,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-5xl font-bold mb-4" style="color: #0E1B2E;">Technologies Explorées</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Notre stack technologique de pointe</p>
+          <p class="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">Notre stack technologique de pointe</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -69,7 +69,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-5xl font-bold mb-4" style="color: #0E1B2E;">Projets Innovants</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Quelques innovations récentes de notre lab</p>
+          <p class="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">Quelques innovations récentes de notre lab</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
@@ -91,7 +91,7 @@
     <section class="py-20" style="background-color: #1F5EFF;">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Un projet innovant en tête ?</h2>
-        <p class="text-xl text-white/90 mb-8">Travaillons ensemble pour transformer votre idée en innovation concrète</p>
+        <p class="text-xl lg:text-2xl text-white/90 mb-8">Travaillons ensemble pour transformer votre idée en innovation concrète</p>
         <RouterLink to="/contact" class="inline-flex items-center px-8 py-4 bg-white text-[#1F5EFF] rounded-lg font-bold hover:shadow-xl transition-all">
           Proposer un projet R&D
           <ArrowRight class="ml-2 w-5 h-5" />

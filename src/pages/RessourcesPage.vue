@@ -4,7 +4,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
           <h1 class="text-4xl lg:text-6xl font-bold mb-6">Centre de Ressources</h1>
-          <p class="text-xl text-gray-300">Insights, guides et documentation pour vous accompagner dans votre transformation digitale.</p>
+          <p class="text-xl lg:text-2xl text-gray-300">Insights, guides et documentation pour vous accompagner dans votre transformation digitale.</p>
         </div>
       </div>
     </section>
@@ -14,7 +14,7 @@
         <div class="flex items-center justify-between mb-12">
           <div>
             <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #0E1B2E;">Blog</h2>
-            <p class="text-xl text-gray-600">Articles d'experts sur les tendances tech et les bonnes pratiques</p>
+            <p class="text-xl lg:text-2xl text-gray-600">Articles d'experts sur les tendances tech et les bonnes pratiques</p>
           </div>
           <BookOpen class="w-12 h-12 text-[#1F5EFF] hidden lg:block" />
         </div>
@@ -50,7 +50,7 @@
         <div class="flex items-center justify-between mb-12">
           <div>
             <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #0E1B2E;">Livres Blancs</h2>
-            <p class="text-xl text-gray-600">Guides approfondis pour maîtriser votre transformation digitale</p>
+            <p class="text-xl lg:text-2xl text-gray-600">Guides approfondis pour maîtriser votre transformation digitale</p>
           </div>
           <FileText class="w-12 h-12 text-[#5FA8FF] hidden lg:block" />
         </div>
@@ -97,7 +97,7 @@
     <section class="py-20" style="background-color: #1F5EFF;">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Restez informé de nos dernières publications</h2>
-        <p class="text-xl text-white/90 mb-8">Recevez nos articles, livres blancs et actualités tech directement dans votre boîte mail</p>
+        <p class="text-xl lg:text-2xl text-white/90 mb-8">Recevez nos articles, livres blancs et actualités tech directement dans votre boîte mail</p>
         <div class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
           <input type="email" placeholder="Votre email professionnel" class="flex-1 px-6 py-4 rounded-lg text-gray-900 placeholder-gray-500" />
           <button class="px-8 py-4 bg-white text-[#1F5EFF] rounded-lg font-bold hover:shadow-xl transition-all whitespace-nowrap">S'abonner</button>

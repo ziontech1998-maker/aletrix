@@ -1,9 +1,9 @@
 <template>
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <RouterLink to="/" class="flex items-center">
-          <span class="text-2xl font-bold" style="color: #0E1B2E">ALTERIX</span>
+    <nav class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
+      <div class="flex justify-between items-center h-24 sm:h-28 md:h-32 lg:h-36 2xl:h-40">
+        <RouterLink to="/" class="flex items-center gap-2 sm:gap-3">
+          <img src="../assets/images/LOGO ALTERIX.png" alt="ALTERIX icon" class="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 2xl:h-36 w-auto" />
         </RouterLink>
 
         <div class="hidden lg:flex items-center space-x-1">
@@ -11,7 +11,7 @@
             v-for="item in navigation"
             :key="item.name"
             :to="item.href"
-            class="px-3 py-2 rounded-md text-sm transition-colors"
+            class="px-4 py-2 rounded-md text-sm lg:text-base xl:text-lg transition-colors"
             :class="isActive(item.href) ? 'text-white' : 'hover:bg-muted'"
             :style="isActive(item.href) ? { backgroundColor: '#1F5EFF', color: 'white' } : { color: '#0E1B2E' }"
           >
@@ -53,10 +53,6 @@ const route = useRoute();
 const navigation = [
   { name: 'Accueil', href: '/' },
   { name: 'Solutions', href: '/solutions' },
-  { name: 'Secteurs', href: '/secteurs' },
-  { name: 'Cas Clients', href: '/cas-clients' },
-  { name: 'Innovation', href: '/innovation' },
-  { name: 'Ressources', href: '/ressources' },
   { name: 'À Propos', href: '/a-propos' },
   { name: 'Contact', href: '/contact' },
 ];

@@ -4,7 +4,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
           <h1 class="text-4xl lg:text-6xl font-bold mb-6">Nos Secteurs d'Expertise</h1>
-          <p class="text-xl text-gray-300">Une connaissance approfondie des enjeux métiers pour des solutions parfaitement adaptées à votre industrie.</p>
+          <p class="text-xl lg:text-2xl text-gray-300">Une connaissance approfondie des enjeux métiers pour des solutions parfaitement adaptées à votre industrie.</p>
         </div>
       </div>
     </section>
@@ -17,7 +17,7 @@
               <component :is="sector.icon" class="w-12 h-12" />
             </div>
             <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #0E1B2E;">{{ sector.title }}</h2>
-            <p class="text-xl text-gray-600 mb-6">{{ sector.description }}</p>
+            <p class="text-xl lg:text-2xl text-gray-600 mb-6">{{ sector.description }}</p>
 
             <div class="grid grid-cols-3 gap-4 mb-8">
               <div v-for="stat in sector.stats" :key="stat" class="text-center">
@@ -53,7 +53,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-5xl font-bold mb-4" style="color: #0E1B2E;">Notre Valeur Ajoutée</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ce qui fait la différence ALTERIX dans chaque secteur</p>
+          <p class="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">Ce qui fait la différence ALTERIX dans chaque secteur</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
@@ -71,7 +71,7 @@
     <section class="py-20" style="background-color: #1F5EFF;">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Votre secteur n'est pas listé ?</h2>
-        <p class="text-xl text-white/90 mb-8">Nous adaptons nos solutions à tous les secteurs d'activité</p>
+        <p class="text-xl lg:text-2xl text-white/90 mb-8">Nous adaptons nos solutions à tous les secteurs d'activité</p>
         <RouterLink to="/contact" class="inline-flex items-center px-8 py-4 bg-white text-[#1F5EFF] rounded-lg font-bold hover:shadow-xl transition-all">
           Parlons-en ensemble
           <ArrowRight class="ml-2 w-5 h-5" />
