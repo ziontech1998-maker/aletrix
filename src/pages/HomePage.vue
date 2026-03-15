@@ -21,19 +21,26 @@
               innovantes pour accompagner les entreprises, institutions et porteurs
               de projets dans leur transformation digitale.
             </p>
-            <div class="flex flex-wrap gap-4">
-              <RouterLink to="/contact" class="inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all hover:shadow-lg" style="background-color: #1F5EFF;">
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <RouterLink
+                to="/contact"
+                class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all hover:shadow-lg"
+                style="background-color: #1F5EFF;"
+              >
                 Parler à un expert
                 <ArrowRight class="ml-2 w-5 h-5" />
               </RouterLink>
-              <RouterLink to="/solutions" class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-lg font-semibold hover:bg-white/20 transition-all">
+              <RouterLink
+                to="/solutions"
+                class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-lg font-semibold hover:bg-white/20 transition-all"
+              >
                 Découvrir nos solutions
               </RouterLink>
             </div>
           </div>
 
-          <!-- Dashboard analytique côté droit -->
-          <div class="relative">
+          <!-- Dashboard analytique côté droit — masqué sur mobile -->
+          <div class="hidden lg:block relative">
             <div class="rounded-2xl shadow-2xl overflow-hidden bg-[#0a1628]/90 backdrop-blur-md border border-white/10 p-5">
 
               <!-- Header dashboard -->
@@ -123,49 +130,29 @@
                 </svg>
               </div>
 
-              <!-- Bas : bar chart + donut -->
-              <div class="grid grid-cols-2 gap-3">
-                <!-- Bar chart -->
-                <div class="bg-[#0d1f3c] rounded-xl p-3 border border-white/5">
-                  <div class="text-gray-400 text-[10px] uppercase tracking-wide mb-2">Par solution</div>
-                  <div class="flex items-end gap-1.5 h-14">
-                    <div class="flex flex-col items-center flex-1 gap-1">
-                      <div class="w-full bg-[#1F5EFF] rounded-t-sm" style="height:85%"></div>
-                      <span class="text-[8px] text-gray-500">SaaS</span>
-                    </div>
-                    <div class="flex flex-col items-center flex-1 gap-1">
-                      <div class="w-full bg-[#5FA8FF] rounded-t-sm" style="height:60%"></div>
-                      <span class="text-[8px] text-gray-500">Conseil</span>
-                    </div>
-                    <div class="flex flex-col items-center flex-1 gap-1">
-                      <div class="w-full bg-[#1F5EFF] rounded-t-sm" style="height:75%"></div>
-                      <span class="text-[8px] text-gray-500">Dev</span>
-                    </div>
-                    <div class="flex flex-col items-center flex-1 gap-1">
-                      <div class="w-full bg-[#5FA8FF] rounded-t-sm" style="height:45%"></div>
-                      <span class="text-[8px] text-gray-500">R&D</span>
-                    </div>
-                    <div class="flex flex-col items-center flex-1 gap-1">
-                      <div class="w-full bg-[#1F5EFF] rounded-t-sm" style="height:95%"></div>
-                      <span class="text-[8px] text-gray-500">IA</span>
-                    </div>
+              <!-- Bar chart (donut supprimé) -->
+              <div class="bg-[#0d1f3c] rounded-xl p-3 border border-white/5">
+                <div class="text-gray-400 text-[10px] uppercase tracking-wide mb-2">Par solution</div>
+                <div class="flex items-end gap-1.5 h-14">
+                  <div class="flex flex-col items-center flex-1 gap-1">
+                    <div class="w-full bg-[#1F5EFF] rounded-t-sm" style="height:85%"></div>
+                    <span class="text-[8px] text-gray-500">SaaS</span>
                   </div>
-                </div>
-                <!-- Donut chart SVG -->
-                <div class="bg-[#0d1f3c] rounded-xl p-3 border border-white/5">
-                  <div class="text-gray-400 text-[10px] uppercase tracking-wide mb-2">Répartition</div>
-                  <div class="flex items-center gap-2">
-                    <svg viewBox="0 0 60 60" class="w-14 h-14 flex-shrink-0" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="30" cy="30" r="22" fill="none" stroke="#1F5EFF" stroke-width="10" stroke-dasharray="69 69" stroke-dashoffset="0" transform="rotate(-90 30 30)"/>
-                      <circle cx="30" cy="30" r="22" fill="none" stroke="#5FA8FF" stroke-width="10" stroke-dasharray="35 103" stroke-dashoffset="-69" transform="rotate(-90 30 30)"/>
-                      <circle cx="30" cy="30" r="22" fill="none" stroke="#93c5fd" stroke-width="10" stroke-dasharray="34 104" stroke-dashoffset="-104" transform="rotate(-90 30 30)"/>
-                      <text x="30" y="34" text-anchor="middle" fill="white" font-size="9" font-weight="bold">100%</text>
-                    </svg>
-                    <div class="space-y-1">
-                      <div class="flex items-center gap-1"><span class="w-2 h-2 rounded-sm bg-[#1F5EFF]"></span><span class="text-[9px] text-gray-400">SaaS 50%</span></div>
-                      <div class="flex items-center gap-1"><span class="w-2 h-2 rounded-sm bg-[#5FA8FF]"></span><span class="text-[9px] text-gray-400">Dev 25%</span></div>
-                      <div class="flex items-center gap-1"><span class="w-2 h-2 rounded-sm bg-[#93c5fd]"></span><span class="text-[9px] text-gray-400">R&D 25%</span></div>
-                    </div>
+                  <div class="flex flex-col items-center flex-1 gap-1">
+                    <div class="w-full bg-[#5FA8FF] rounded-t-sm" style="height:60%"></div>
+                    <span class="text-[8px] text-gray-500">Conseil</span>
+                  </div>
+                  <div class="flex flex-col items-center flex-1 gap-1">
+                    <div class="w-full bg-[#1F5EFF] rounded-t-sm" style="height:75%"></div>
+                    <span class="text-[8px] text-gray-500">Dev</span>
+                  </div>
+                  <div class="flex flex-col items-center flex-1 gap-1">
+                    <div class="w-full bg-[#5FA8FF] rounded-t-sm" style="height:45%"></div>
+                    <span class="text-[8px] text-gray-500">R&D</span>
+                  </div>
+                  <div class="flex flex-col items-center flex-1 gap-1">
+                    <div class="w-full bg-[#1F5EFF] rounded-t-sm" style="height:95%"></div>
+                    <span class="text-[8px] text-gray-500">IA</span>
                   </div>
                 </div>
               </div>

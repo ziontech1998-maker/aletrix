@@ -1,14 +1,20 @@
 <template>
   <div>
-    <section class="bg-gradient-to-br from-[#0E1B2E] to-[#1a2d4d] text-white py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section
+      class="relative text-white py-20 overflow-hidden"
+      style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920'); background-size: cover; background-position: center;"
+    >
+      <!-- Overlay sombre pour lisibilité -->
+      <div class="absolute inset-0 bg-[#0E1B2E]/80 backdrop-blur-[1px]"></div>
+
+      <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
         <h1 class="text-4xl lg:text-6xl font-bold mb-6">Contactez-nous</h1>
         <p class="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto">Nous sommes là pour répondre à vos questions et transformer vos idées en réalité</p>
       </div>
     </section>
 
     <section class="py-12 bg-white border-b border-gray-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
         <div class="grid md:grid-cols-3 gap-8">
           <a v-for="info in contactInfo" :key="info.title" :href="info.link" class="flex items-start p-6 rounded-xl hover:bg-gray-50 transition-all group">
             <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 group-hover:scale-110 transition-transform" style="background-color: #1F5EFF15; color: #1F5EFF;">
@@ -24,7 +30,7 @@
     </section>
 
     <section class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
         <div class="grid lg:grid-cols-2 gap-12">
           <div class="bg-white rounded-2xl p-8 shadow-xl">
             <h2 class="text-3xl lg:text-4xl font-bold mb-6" style="color: #0E1B2E;">Envoyez-nous un message</h2>
