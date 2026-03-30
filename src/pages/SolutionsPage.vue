@@ -1,14 +1,13 @@
 <template>
   <div>
-    <section
-      class="relative text-white py-20 overflow-hidden"
-      style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920'); background-size: cover; background-position: center;"
-    >
+    <section class="relative text-white py-20 overflow-hidden bg-[#0E1B2E]">
+      <!-- Fond animé technologique -->
+      <TechBackground />
       <!-- Overlay sombre pour lisibilité -->
-      <div class="absolute inset-0 bg-[#0E1B2E]/80 backdrop-blur-[1px]"></div>
+      <div class="absolute inset-0 bg-[#0E1B2E]/70 backdrop-blur-[2px]"></div>
 
-      <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
-        <div class="max-w-3xl">
+      <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
+        <div class="max-w-3xl mx-auto">
           <h1 class="text-4xl lg:text-6xl font-bold mb-6">Nos Solutions pour votre Transformation Digitale</h1>
           <p class="text-xl lg:text-2xl text-gray-300">
             4 domaines d'intervention pour transformer votre vision en réalité.
@@ -70,6 +69,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
 import { Cloud, Users, Code, Sparkles, ArrowRight, Check } from 'lucide-vue-next';
+import TechBackground from '@/components/TechBackground.vue';
 
 const solutions = [
   {

@@ -1,31 +1,19 @@
 <template>
   <div>
-    <section
-      class="relative text-white py-20 overflow-hidden"
-      style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920'); background-size: cover; background-position: center;"
-    >
+    <section class="relative text-white py-20 overflow-hidden bg-[#0E1B2E]">
+      <!-- Fond animé technologique -->
+      <TechBackground />
       <!-- Overlay sombre pour lisibilité -->
-      <div class="absolute inset-0 bg-[#0E1B2E]/80 backdrop-blur-[1px]"></div>
+      <div class="absolute inset-0 bg-[#0E1B2E]/70 backdrop-blur-[2px]"></div>
 
-      <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div class="lg:pr-8">
-            <h1 class="text-4xl lg:text-6xl font-bold mb-6">À Propos d'ALTERIX</h1>
-            <p class="text-xl lg:text-2xl text-gray-300 mb-4">ALTERIX est une entreprise technologique spécialisée dans la conception et le développement de solutions digitales innovantes.</p>
-            <p class="text-xl lg:text-2xl text-gray-300 mb-8">Notre mission est d'accompagner les organisations dans leur transformation digitale.</p>
-            <RouterLink to="/contact" class="inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all hover:shadow-lg" style="background-color: #1F5EFF;">
-              Rejoindre l'aventure
-              <ArrowRight class="ml-2 w-5 h-5" />
-            </RouterLink>
-          </div>
-          <div class="w-full mt-8 lg:mt-0">
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-              alt="Développeurs collaboration technologie"
-              class-name="rounded-2xl shadow-2xl w-full object-cover"
-            />
-          </div>
-        </div>
+      <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
+        <h1 class="text-4xl lg:text-6xl font-bold mb-6">À Propos d'ALTERIX</h1>
+        <p class="text-xl lg:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto">ALTERIX est une entreprise technologique spécialisée dans la conception et le développement de solutions digitales innovantes.</p>
+        <p class="text-xl lg:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">Notre mission est d'accompagner les organisations dans leur transformation digitale.</p>
+        <RouterLink to="/contact" class="inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all hover:shadow-lg" style="background-color: #1F5EFF;">
+          Rejoindre l'aventure
+          <ArrowRight class="ml-2 w-5 h-5" />
+        </RouterLink>
       </div>
     </section>
 
@@ -90,6 +78,7 @@
 import { RouterLink } from 'vue-router';
 import { Target, Users, Heart, Rocket, Globe, ArrowRight } from 'lucide-vue-next';
 import ImageWithFallback from '@/components/ImageWithFallback.vue';
+import TechBackground from '@/components/TechBackground.vue';
 
 const values = [
   { icon: Target, title: 'Excellence', description: "Nous visons l'excellence dans chaque projet et chaque interaction avec nos partenaires." },
